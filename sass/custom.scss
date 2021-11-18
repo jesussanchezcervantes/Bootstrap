@@ -12,9 +12,22 @@ $secondary: #FA5959;
     z-index: -1;
     padding-top:20%;
 }
+
+.background-element2{
+    background: $primary;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 0 0;
+    z-index: -1;
+    padding-top:20%;
+}
+
 .container-fluid {
     position:relative;
 }
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";

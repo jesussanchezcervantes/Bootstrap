@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="sass/custom.css">
 
     <title>Bootstrap</title>
@@ -16,48 +13,104 @@
 <body>
      <!-NAVBAR->
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-toggler-sm">
-        <div class="container-lg align-top">
-          <a class="navbar-brand d-inline-block align-top pt-5" href=""><img src="Imagenes/logo-bookmark.svg" alt="logo-bookmark" width="130px"</a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
-          aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-item ms-auto align-items-end">
-              <li class="nav-item"><a class="nav-link active" href="#">FEATURES</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">PRINCING</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-              <li class="nav-item"><a class="btn btn-danger shadow-sm">LOGIN</button></a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white navbar-toggler-sm navbar fixed-top">
+      <div class="container-lg navbar-fixed-top">
+        <a class="navbar-brand pt-5" href=""><img src="Imagenes/logo-bookmark.svg" alt="logo-bookmark" width="130px"</a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-item ms-auto align-items-end">
+              <li class="nav-item"><a class="nav-link active" href="Features">FEATURES</a></li>
+              <li class="nav-item"><a class="nav-link" href="Pricing">PRICING</a></li>
+              <li class="nav-item"><a class="nav-link" href="Contact">CONTACT</a></li>
+              <li class="nav-item"><a class="btn btn-danger shadow-sm" href="Login">LOGIN</button></a></li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
       <!-CONTENIDO PRINCIPAL->
 
       <div id="principal_content" class="container-fluid">
         <div class="container-lg">
           <div class="row pt-5">
-            <div class="col-6">
+            <div class="col-6 pt-5">
               <h1>A Simple Bookmark <br>
                 Manager</h1>
-              <p>A clean adn simple interface to organize your favourite <br>  
+              <p>A clean and simple interface to organize your favourite <br>  
                 websites. Open a new browser tab and see your sites load <br>
-              instantly. Try it for free </p>
+                instantly. Try it for free </p>
               <button type="button" class="btn btn-primary shadow p-3 me-3 mb-5 rounded">Get It on Chrome</button>
               <button type="button" class="btn btn-light shadow p-3 ms-3 mb-5 rounded">Get It on Firefox</button>
             </div>
+
             <div class="col-6">
-              <a><img src="./Imagenes/illustration-hero.svg" class="img-fluid" alt="" w-100"></a>
+              <a><img src="./Imagenes/illustration-hero.svg" class="img-fluid pt-5" alt="Ilustracion-Hero-Derecha" width="100%"></a>
             </div>
           </div>
         </div> 
         <div class="background-element"></div> 
     </div> 
+
+        <!-FEATURES->
+
+        <div id="features" class="container-fluid">
+          <div class="container-lg text-center pt-5">
+              <h2>Features</h2>
+              <p>Our aim is to make it quick and easy for you to access your <br>  
+                favourite websites. Your bookmarks sync between your devices  <br>
+                so you can access them on the go. </p>
+            </div>
+        </div>
+
+            <div id="tabs" class="container-fluid">
+              <div class="container-lg">
+                <div class="row-cols-12">
+              <ul class="nav nav-tabs justify-content-evenly">
+                <li class="nav-item">
+                  <a class="nav-link text-black-50" aria-current="page" href="#">Simple Bookmarking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold text-black-50" href="#">Speedy Searching</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold text-black-50" href="#">Easy Sharing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="principal_content" class="container-fluid">
+              <div class="container-lg">
+                <div class="row pt-5">
+                  <div class="col-6 pt-5">
+                    <h2>Bookmark in one Click</h2>
+                    <p>Organize your bookmarks  however you like. Our<br>  
+                      simple drug-and-drop interface gives you complete <br>
+                      control over how you manage your favourite sites </p>
+                    <button type="button" class="btn btn-primary shadow p-3 me-3 mb-5 rounded">More info</button>
+                    
+                  <div class="col-6">
+                    <a><img src="./Imagenes/illustration-features-tab-1.svg" class="img-fluid" alt="Ilustracion-Features-Izquierda"></a>
+                  </div>
+                </div>
+              </div> 
+              <div class="background-element2"></div> 
+          </div> 
+
+         
+
+            
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
