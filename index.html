@@ -11,48 +11,46 @@
 
 </head>
 <body>
-     <!-NAVBAR->
-  <div id="navbar">
-    <nav class="navbar navbar-expand-sm navbar-light bg-white navbar-toggler-sm navbar fixed-top">
-      <div class="container-lg navbar-fixed-top">
-        <a class="navbar-brand pt-5" href=""><img src="Imagenes/logo-bookmark.svg" alt="logo-bookmark" width="130px"</a>
-        <button class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarNav" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav-item ms-auto align-items-end">
-              <li class="nav-item"><a class="nav-link active" href="Features">FEATURES</a></li>
-              <li class="nav-item"><a class="nav-link" href="Pricing">PRICING</a></li>
-              <li class="nav-item"><a class="nav-link" href="Contact">CONTACT</a></li>
-              <li class="nav-item"><a class="btn btn-danger shadow-sm" href="Login">LOGIN</button></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#"><img src="Imagenes/logo-bookmark.svg" width="130px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <!-CONTENIDO PRINCIPAL->
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger shadow-sm" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+      <!--CONTENIDO PRINCIPAL-->
 
       <div id="principal_content" class="container-fluid">
         <div class="container-lg">
           <div class="row pt-5">
-            <div class="col-6 pt-5">
-              <h1>A Simple Bookmark <br>
-                Manager</h1>
-              <p>A clean and simple interface to organize your favourite <br>  
-                websites. Open a new browser tab and see your sites load <br>
-                instantly. Try it for free </p>
+            <div class="col-lg-6 col-xs-12 order-2 order-lg-1 pt-5">
+              <h1 class="text-xs-center">A Simple Bookmark Manager</h1>
+              <p class="text-xs-center">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free </p>
               <button type="button" class="btn btn-primary shadow p-3 me-3 mb-5 rounded">Get It on Chrome</button>
               <button type="button" class="btn btn-light shadow p-3 ms-3 mb-5 rounded">Get It on Firefox</button>
             </div>
 
-            <div class="col-6">
+            <div class="col-lg-6 col-xs-12 order-1 order-lg-2">
               <a><img src="./Imagenes/illustration-hero.svg" class="img-fluid pt-5" alt="Ilustracion-Hero-Derecha" width="100%"></a>
             </div>
           </div>
@@ -65,15 +63,13 @@
         <div id="features" class="container-fluid">
           <div class="container-lg text-center pt-5">
               <h2>Features</h2>
-              <p>Our aim is to make it quick and easy for you to access your <br>  
-                favourite websites. Your bookmarks sync between your devices  <br>
-                so you can access them on the go. </p>
+              <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
             </div>
         </div>
 
             <div id="tabs" class="container-fluid">
               <div class="container-lg">
-                <div class="row-cols-12">
+                <div class="row col-6">
               <ul class="nav nav-tabs justify-content-evenly">
                 <li class="nav-item">
                   <a class="nav-link text-black-50" aria-current="page" href="#">Simple Bookmarking</a>
@@ -115,7 +111,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html> 
