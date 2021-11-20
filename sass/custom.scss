@@ -1,6 +1,7 @@
 
 $primary:#5265E1;
 $secondary: #FA5959;
+$success: #ffffff;
 
 .background-element{
     background: $primary;
@@ -18,15 +19,31 @@ $secondary: #FA5959;
     width: 40%;
     position: absolute;
     bottom: 0;
-    right: 0;
-    border-radius: 0 0 0 0;
+    left: 0;
+    border-radius: 0 175px 175px 0;
     z-index: -1;
     padding-top:20%;
+}
+
+.list-group-flush > .list-group-item.dashed-line{
+    border-width: 0 0 2px;
+    border-style: dashed;
+}
+
+.nav-pills .nav-link.active {
+    color: #000000 !important;
+    background-color: #fff !important;
 }
 
 .container-fluid {
     position:relative;
 }
+
+@media only screen and (max-width: 575px){
+    .text-xs-center{
+      text-align: center !important;
+    }
+  }
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
