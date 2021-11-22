@@ -12,27 +12,16 @@ $success: #ffffff;
     border-radius: 175px 0 0 175px;
     z-index: -1;
     padding-top:20%;
-}
 
-.background-element2{
-    background: $primary;
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0 175px 175px 0;
-    z-index: -1;
-    padding-top:20%;
+    &.left{
+        left: 0;
+        border-radius: 0 175px 175px 0;
+    }
 }
 
 .list-group-flush > .list-group-item.dashed-line{
     border-width: 0 0 2px;
-    border-style: dashed;
-}
-
-.nav-pills .nav-link.active {
-    color: #000000 !important;
-    background-color: #fff !important;
+    border-style: dashed; 
 }
 
 .container-fluid {
@@ -43,8 +32,23 @@ $success: #ffffff;
     .text-xs-center{
       text-align: center !important;
     }
+    .flex-xs-column {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .background-element{
+        top: 0;
+        bottom: auto;
+        margin-top: 175px;
+        width: 80%;
+        padding-top: 50%;
+    }
+    .background-element.left{
+        margin-top: 110px;
+    }
   }
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

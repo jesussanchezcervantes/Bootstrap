@@ -1,0 +1,15 @@
+.nav-link.features-tabs {
+    color: grey;
+    background-color: #fff;
+    border-width: 0 0 2px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.nav-link.active.features-tabs {
+    color: #000000;
+    background-color: #fff;
+    border-width: 0 0 2px;
+    border-style: solid;
+    border-color: red;
+}

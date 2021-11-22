@@ -9,25 +9,14 @@
   padding-top: 20%;
 }
 
-.background-element2 {
-  background: #5265E1;
-  width: 40%;
-  position: absolute;
-  bottom: 0;
+.background-element.left {
   left: 0;
   border-radius: 0 175px 175px 0;
-  z-index: -1;
-  padding-top: 20%;
 }
 
 .list-group-flush > .list-group-item.dashed-line {
   border-width: 0 0 2px;
   border-style: dashed;
-}
-
-.nav-pills .nav-link.active {
-  color: #000000 !important;
-  background-color: #fff !important;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -37,6 +26,22 @@
 @media only screen and (max-width: 575px) {
   .text-xs-center {
     text-align: center !important;
+  }
+  .flex-xs-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .background-element {
+    top: 0;
+    bottom: auto;
+    margin-top: 175px;
+    width: 80%;
+    padding-top: 50%;
+  }
+  .background-element.left {
+    margin-top: 110px;
   }
 }
 
